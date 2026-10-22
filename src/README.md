@@ -2,7 +2,7 @@
 
 对应 10.01 旗舰版三版本助手，程序集版本 `4.0.6.0`。
 
-本目录包含本项目的 C# 控制器与 Python 运行层源码。鲨鱼启动器源码另附 `ChessShark-Launcher-Source.zip`，也可从 [鲨鱼启动器仓库](https://github.com/tippingabke-gif/chessshark-portable-launcher)查看。旋风和鲨鱼原程序本体没有提供源码，本包不包含其原始源码。
+本目录包含本项目旋风助手的 C# 控制器与 Python 运行层源码。鲨鱼启动器源码已在 [鲨鱼启动器仓库](https://github.com/tippingabke-gif/chessshark-portable-launcher)发布，本包不重复收录。旋风和鲨鱼原程序本体没有提供源码，本包不包含其原始源码。
 
 ## 文件结构
 
@@ -13,7 +13,7 @@
 - `BUILD.md`：构建步骤和依赖说明。
 - `SHA256SUMS.txt`：源码包的文件校验值。
 
-GitHub 的 `src/` 展示源码与组件清单。完整离线源码包额外携带三个预编译运行组件和鲨鱼启动器源码归档。
+GitHub 的 `src/` 展示源码与组件清单。完整离线源码包额外携带三个预编译运行组件。
 
 ## 对应版本
 
