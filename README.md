@@ -2,7 +2,7 @@
 
 适配版本：**10.01 旗舰版**。三版本助手分别对应原包中的 **OPT、COM、MAX**，棋盘通过 UCI 加载对应原 EXE。**支持配置旋风审局库（残局库）**。
 
-[使用说明](#使用说明) · [界面截图](#界面截图) · [审局库配置](#审局库配置) · [原理说明](#原理说明) · [源码与构建](src/README.md)
+[使用说明](#使用说明) · [界面截图](#界面截图) · [审局库配置](#审局库配置) · [原理说明](#原理说明) · [源码与构建](src/README.md) · [MIT 许可](LICENSE) · [自动检查](docs/CHECKS.md)
 
 ## 下载包
 
@@ -124,5 +124,11 @@ OPT、COM 使用各自的启动流程，MAX 使用兼容执行链连接真实引
 NNUE 由原引擎用作评估模型；审局库由原引擎按 `config.ini` 中的 `TB_Path` 读取。助手不代替引擎判断具体局面是否命中查表。
 
 运行链使用按程序设置的外网阻止规则。正常停止时，助手结束对应会话并恢复本次创建的启动接管，网络阻止规则保留。当前为每次运行助手的方式。
+
+## 许可与自动检查
+
+本项目自行编写的助手源码、检查脚本和文档采用 [MIT](LICENSE)。第三方程序与组件仍遵循各自许可，范围与许可材料见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+[Windows source and compilation checks](https://github.com/tippingabke-gif/cyclone-nn-cracker/actions/workflows/ci.yml) 检查 Python 语法、运行组件清单和 C# 源码编译。具体范围见 [检查说明](docs/CHECKS.md)，通过状态以对应提交的 Actions 结果为准。MIT 是开源许可，自动检查是源码验证，两者均不等同于软件安全认证。
 
 项目地址：https://github.com/tippingabke-gif
