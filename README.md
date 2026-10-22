@@ -19,7 +19,7 @@
 
 旋风助手的 C# 控制器、Python 运行层及组件清单已放在 [`src/`](src/README.md)，构建步骤见 [`src/BUILD.md`](src/BUILD.md)。这是助手源码，原引擎本体的源码不在其中。
 
-完整离线源码包 `Cyclone-Cracker-10.01-Ultimate-Helper-Source.zip` 同时携带三个预编译运行组件，已整理，待补入发行附件。GitHub 自动生成的 Source code ZIP 只包含仓库文件。
+完整离线源码包 `Cyclone-Cracker-10.01-Ultimate-Helper-Source.zip` 同时携带三个预编译运行组件，已上传至发行草稿。GitHub 自动生成的 Source code ZIP 只包含仓库文件。
 
 鲨鱼启动器源码已在 [鲨鱼启动器项目](https://github.com/tippingabke-gif/chessshark-portable-launcher)发布，本次旋风源码包不重复收录。第三方组件保留各自许可证。
 
