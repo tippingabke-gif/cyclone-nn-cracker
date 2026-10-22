@@ -47,4 +47,4 @@ OPT / COM 的 `CycloneNetwork.cs` 编译为对应运行目录中的 `CycloneNetw
 
 修改运行组件后，应重新制作该版本的 ZIP，并生成路径到 SHA-256 的 JSON 清单，再编译控制器。上述运行层说明记录源码入口与组成；本次源码整理未重新验证全套运行组件构建环境。优先使用随包已核对的运行组件完成控制器构建。
 
-鲨鱼启动器的构建步骤见其独立源码归档内的说明。
+鲨鱼启动器源码与构建步骤见 [已有项目](https://github.com/tippingabke-gif/chessshark-portable-launcher)，本源码包只包含旋风助手。
