@@ -6,12 +6,12 @@
 
 ## 下载包
 
-本项目提供单独版与鲨鱼整合包两种形式。程序包、离线源码包与校验文件均可从 [Releases](https://github.com/tippingabke-gif/cyclone-nn-cracker/releases/tag/v10.01-ultimate-r1) 下载。
+本项目提供单独版与鲨鱼整合包两种形式。公开发布已撤回，仓库保持私有。程序包、离线源码包与校验文件保留在私有 Release 中，暂停对外下载。
 
 | 下载包 | 内容与用途 | 当前状态 |
 | --- | --- | --- |
-| 单独版 | 三版本助手及使用说明；适合已有原引擎和棋盘的用户 | 已发布 |
-| 鲨鱼象棋＋旋风整合包（手动预览版） | 鲨鱼棋盘、旋风三原引擎、NNUE 与两个助手 | 已发布；需要分别启动助手，尚未完成整包运行验证 |
+| 单独版 | 三版本助手及使用说明；适合已有原引擎和棋盘的用户 | 已撤回公开发布 |
+| 鲨鱼象棋＋旋风整合包（手动预览版） | 鲨鱼棋盘、旋风三原引擎、NNUE 与两个助手 | 已撤回公开发布；需要分别启动助手，尚未完成整包运行验证 |
 
 单独版不含原引擎、NNUE 模型、审局库或鲨鱼棋盘。下载包放在 Releases 的附件区域。
 
@@ -19,7 +19,7 @@
 
 旋风助手的 C# 控制器、Python 运行层及组件清单已放在 [`src/`](src/README.md)，构建步骤见 [`src/BUILD.md`](src/BUILD.md)。这是助手源码，原引擎本体的源码不在其中。
 
-完整离线源码包 `Cyclone-Cracker-10.01-Ultimate-Helper-Source.zip` 同时携带三个预编译运行组件，已发布。GitHub 自动生成的 Source code ZIP 只包含仓库文件。
+完整离线源码包 `Cyclone-Cracker-10.01-Ultimate-Helper-Source.zip` 同时携带三个预编译运行组件，已撤回公开发布。GitHub 自动生成的 Source code ZIP 只包含仓库文件。
 
 鲨鱼启动器源码已在 [鲨鱼启动器项目](https://github.com/tippingabke-gif/chessshark-portable-launcher)发布，本次旋风源码包不重复收录。第三方组件保留各自许可证。
 
