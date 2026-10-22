@@ -1,0 +1,30 @@
+# 象棋旋风破解器：助手源码
+
+对应 10.01 旗舰版三版本助手，程序集版本 `4.0.6.0`。
+
+本目录包含本项目的 C# 控制器与 Python 运行层源码。鲨鱼启动器源码另附 `ChessShark-Launcher-Source.zip`，也可从 [鲨鱼启动器仓库](https://github.com/tippingabke-gif/chessshark-portable-launcher)查看。旋风和鲨鱼原程序本体没有提供源码，本包不包含其原始源码。
+
+## 文件结构
+
+- `controller/`：助手界面、三个版本的会话管理、MAX 生命周期与管道桥接源码。
+- `runtime/opt/`、`runtime/com/`：对应版本的 Python 运行层和网络组件源码。
+- `runtime/max/`：MAX 工作进程、调试协议客户端、管道通信和进程辅助源码。
+- `resources/`：原发行助手使用的预编译运行组件 ZIP 及逐文件哈希清单。
+- `BUILD.md`：构建步骤和依赖说明。
+- `SHA256SUMS.txt`：源码包的文件校验值。
+
+GitHub 的 `src/` 展示源码与组件清单。完整离线源码包额外携带三个预编译运行组件和鲨鱼启动器源码归档。
+
+## 对应版本
+
+原发行助手的 SHA-256：
+
+```text
+4a3fe0a440a6b54a08fe4ca8a96bfb020b6cecbb3ae33e1e9526893d5face079
+```
+
+运行组件按最终构建清单逐文件核验。源码来自该构建的控制器和运行层文件；本次整理未重新执行引擎，也未进行整包运行验收。不同编译器、依赖版本、压缩工具及 PE 时间戳会影响重新构建文件的哈希。
+
+第三方组件保留各自许可证。Intel SDE 等外部组件以原有二进制形式随运行资源提供，其实现源码不属于本项目。
+
+项目地址：https://github.com/tippingabke-gif
