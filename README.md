@@ -19,11 +19,22 @@
 
 旋风助手的 C# 控制器、Python 运行层及组件清单已放在 [`src/`](src/README.md)，构建步骤见 [`src/BUILD.md`](src/BUILD.md)。这是助手源码，原引擎本体的源码不在其中。
 
-完整离线源码包 `Cyclone-Cracker-10.01-Ultimate-Helper-Source.zip` 同时携带三个预编译运行组件，已发布。GitHub 自动生成的 Source code ZIP 只包含仓库文件。
+完整离线源码包 `Cyclone-Cracker-10.01-Ultimate-Helper-Source-COM-r5.zip` 同时携带三个预编译运行组件，已发布。原 r2 标签的自动 Source code 归档保留旧快照；本修订源码请使用 main 分支或带 COM-r5 的离线源码附件。
 
 鲨鱼启动器源码已在 [鲨鱼启动器项目](https://github.com/tippingabke-gif/chessshark-portable-launcher)发布，本次旋风源码包不重复收录。第三方组件保留各自许可证。
 
 ## 使用说明
+
+### COM 首次加载修复（r5）
+
+本修订修复 COM 辅助文件依赖固定目录、在部分电脑首次加载时退出的问题。单独包与整合包均已更新助手，COM 运行组件及校验清单同步更新。原引擎、NNUE、鲨鱼配置与启动器内容保持原样。
+
+- **首次使用**：完整解压到新的可写目录，启动助手并启用 COM，再在棋盘中以 UCI 加载 `cyclone-nn-com.exe`。
+- **旧包升级**：先结束计算、卸载引擎并停止退出助手；备份旧助手，将助手旁的 `CycloneSupport-v406-COM` 文件夹整体改名备份，再放入新助手并重新启动。若已有同名备份，另选名称。助手会重新展开完整运行库。
+- 只替换 EXE 而保留旧 COM 缓存会导致校验失败。请保留自己的原引擎、权重及配置；计算时继续保持助手运行。
+
+新版助手 SHA-256：`dfc745fa03f5ff02a7ca9ab82be608c022882c00d217a4703f048ba37a69acae`。
+
 
 ### 单独版启动
 
@@ -38,7 +49,7 @@
 
 ### 整合包启动（旧配置启动版）
 
-整合包文件名：`ChessShark-Cyclone-10.01-Ultimate-OldConfig-Windows-x64.zip`。
+整合包文件名：`ChessShark-Cyclone-10.01-Ultimate-OldConfig-COM-r5-Windows-x64.zip`。
 
 1. 完整解压，保留“鲨鱼”和“旋风”两个子文件夹。
 2. 打开 `鲨鱼/ChessShark_便携启动修复.exe`，等待已就绪。默认使用旧配置中的 Pikafish。
