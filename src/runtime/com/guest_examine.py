@@ -2,13 +2,13 @@
 from pathlib import Path
 import ctypes as C
 from ctypes import wintypes as W
-import hashlib, json, re, struct, subprocess, threading, time, traceback, zipfile
+import hashlib, json, os, re, struct, subprocess, threading, time, traceback, zipfile
 import pefile
 
-ROOT = Path(r'C:\Lab\CycloneUltimate')
+ROOT = Path(os.environ.get('CYCLONE_RUNTIME_ROOT', str(Path(__file__).resolve().parent)))
 PACKAGE = ROOT / 'original'
 OUT = ROOT / 'evidence'
-OUT.mkdir(exist_ok=True)
+OUT.mkdir(parents=True, exist_ok=True)
 STATUS = {'stage': 'starting', 'samplesExecuted': [], 'memoryPatched': False}
 
 def save(name, value):
